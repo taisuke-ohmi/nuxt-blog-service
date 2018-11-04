@@ -8,7 +8,7 @@
     </el-menu-item>
 
     <no-ssr>
-    <el-menu-item index="4" style="float: right;" :route="{ path: '/' }">>
+    <el-menu-item index="4" style="float: right;" :route="{ path: '/' }">
       <span>ログイン</span>
     </el-menu-item>
     </no-ssr>
