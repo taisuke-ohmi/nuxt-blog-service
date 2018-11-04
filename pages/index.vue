@@ -31,7 +31,7 @@ export default {
     return {
       isCreateMode: false,
       formData: {
-        is: ''
+        id: ''
       }
     }
   },
