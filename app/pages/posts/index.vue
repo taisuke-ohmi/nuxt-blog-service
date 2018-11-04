@@ -4,7 +4,7 @@
       <div slot="header" class="clearfix">
         <span>新着投稿</span>
       </div>
-      <el-table :data="showPosts" style="width: 100%" class="table">
+      <el-table :data="showPosts" style="width: 100%" class="table" @row-click="handleClick">
         <el-table-column prop="title" label="タイトル">
         </el-table-column>
         <el-table-column prop="user.id" label="投稿者" width="180">
