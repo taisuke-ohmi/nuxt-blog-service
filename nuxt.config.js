@@ -56,6 +56,10 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  env: {
+    FIREBASE_TOKEN: process.env.FIREBASE_TOKEN
+  },
+
   /*
   ** Build configuration
   */
