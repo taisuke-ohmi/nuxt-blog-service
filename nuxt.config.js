@@ -52,12 +52,8 @@ module.exports = {
   ** Axios module configuration
   */
   axios: {
-    baseURL: 'https://nuxt-blog-service-98178.firebaseio.com'
+    baseURL: 'https://nuxt-blog-service-2cc00.firebaseio.com/'
     // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  env: {
-    FIREBASE_TOKEN: process.env.FIREBASE_TOKEN
   },
 
   /*
