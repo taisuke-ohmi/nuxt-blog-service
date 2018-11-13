@@ -56,7 +56,7 @@ export default {
       if (!this.user) return false
       return this.post.likes.find(l => l.user_id === this.user.id)
     },
-    ...mapGetters(['isLoggedIn']),
+    ...mapGetters(['user', 'isLoggedIn']),
     ...mapGetters('posts', ['posts'])
   },
   methods: {
