@@ -7,22 +7,24 @@
           <small>by {{post.user.id}}</small>
         </div>
         <p>{{post.body}}</p>
-        <p class="text-right">
-          <el-button :disabled="!isLoggedIn" type="warning" v-if="isLiked" @click="unlike" round>
-            <span class="el-icon-star-on"></span>
-            <span>{{post.likes.length}}</span>
-          </el-button>
-          <el-button :disabled="!isLoggedIn" type="warning" v-else @click="like" round>
-            <span class="el-icon-star-off"></span>
-            <span>{{post.likes.length}}</span>
-          </el-button>
-        </p>
+        <no-ssr>
+          <p class="text-right">
+            <el-button :disabled="!isLoggedIn" type="warning" v-if="isLiked" @click="unlike" round>
+              <span class="el-icon-star-on"></span>
+              <span>{{post.likes.length}}</span>
+            </el-button>
+            <el-button :disabled="!isLoggedIn" type="warning" v-else @click="like" round>
+              <span class="el-icon-star-off"></span>
+              <span>{{post.likes.length}}</span>
+            </el-button>
+          </p>
+        </no-ssr>
         <p class="text-right">
           {{post.created_at | time}}
         </p>
       </el-card>
       <p>
-      <nuxt-link to="/posts">&lt; 投稿一覧へ戻る</nuxt-link>
+        <nuxt-link to="/posts">&lt; 投稿一覧へ戻る</nuxt-link>
       </p>
     </div>
   </section>
