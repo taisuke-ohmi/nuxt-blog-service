@@ -1,6 +1,9 @@
+process.env.DEBUG = 'nuxt:*'
+
 const pkg = require('./package')
 
 module.exports = {
+  debug: true,
   mode: 'universal',
   srcDir: 'app',
   router: {
